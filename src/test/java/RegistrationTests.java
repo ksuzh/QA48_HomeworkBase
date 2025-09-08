@@ -6,21 +6,14 @@ public class RegistrationTests extends TestBase {
 
     @Test
     public void positiveRegistrationTests() {
+        int i = (int) (System.currentTimeMillis() / 1000) % 3600;
         click(By.cssSelector("[href='/register']"));
+
         click(By.id("gender-female"));
-
-        click(By.id("FirstName"));
         type(By.id("FirstName"), "Ksen1");
-
-        click(By.id("LastName"));
         type(By.id("LastName"), "Kseg");
-
-        click(By.id("Email"));
-        type(By.id("Email"), "kl5@gmail.com");
-
-        click(By.id("Password"));
+        type(By.id("Email"), "kl5" + i + "@gmail.com");
         type(By.id("Password"), "Aa12345!");
-        click(By.id("ConfirmPassword"));
         type(By.id("ConfirmPassword"), "Aa12345!");
 
         click(By.id("register-button"));
