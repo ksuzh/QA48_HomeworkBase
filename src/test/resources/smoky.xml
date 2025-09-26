@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Quick" verbose="1">
+    <test name="Quick1">
+        <classes>
+            <class name="com.demo.tests.RegistrationTests">
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="com.demo.tests.LoginTests"/>
+            <class name="com.demo.tests.AddItemTest"/>
+            <class name="com.demo.tests.DeleteItemTests"/>
+        </classes>
+    </test>
+</suite>
