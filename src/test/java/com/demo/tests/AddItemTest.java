@@ -1,5 +1,6 @@
 package com.demo.tests;
 
+import com.demo.data.UserData;
 import com.demo.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +14,7 @@ public class AddItemTest extends TestBase {
         }
 
         app.getUser().clickLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("kl5@gmail.com").setPassword("Aa12345!"));
+        app.getUser().fillLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickLoginButton();
     }
 

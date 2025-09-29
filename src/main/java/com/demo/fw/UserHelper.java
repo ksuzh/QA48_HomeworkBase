@@ -55,16 +55,26 @@ public class UserHelper extends BaseHelper {
         return isElementPresent(By.cssSelector("[href='/login']"));
     }
 
+    public boolean isSuccessfulRegistrationMsgPresent() {
+        return isElementPresent(By.xpath("//div[.='\n" +
+                "            Your registration completed\n" +
+                "        ']"));
+    }
+
     public boolean isErrorMessageFirstNamePresent() {
         return isElementPresent(By.xpath("//span[@class='field-validation-error']//span[@for='FirstName']"));
 
     }
 
-    public boolean isErrorMessageInvalidEmailEmailPresent() {
+    public boolean isErrorMessageInvalidEmailPresent() {
         return isElementPresent(By.xpath("//span[@class='field-validation-error']//span[@for='Email']"));
     }
 
     public boolean isLoginErrorMessagePresent() {
         return isElementPresent(By.xpath("//div[@class='validation-summary-errors']"));
+    }
+
+    public boolean isLogoutLinkPresent() {
+        return isElementPresent(By.cssSelector("[href='/logout']"));
     }
 }

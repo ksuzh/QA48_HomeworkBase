@@ -1,5 +1,6 @@
 package com.demo.tests;
 
+import com.demo.data.UserData;
 import com.demo.models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -18,15 +19,15 @@ public class LoginTests extends TestBase {
     @Test
     public void loginPositiveTest() {
         app.getUser().clickLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("kl5@gmail.com").setPassword("Aa12345!"));
+        app.getUser().fillLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickLoginButton();
-        Assert.assertTrue(app.getUser().isElementPresent(By.cssSelector("[href='/logout']")));
+        Assert.assertTrue(app.getUser().isLogoutLinkPresent());
     }
 
     @Test
     public void loginNonExistingUserNegativeTest() {
         app.getUser().clickLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("kl00@gmail.com").setPassword("Aa12345!"));
+        app.getUser().fillLoginForm(new User().setEmail("kl00@gmail.com").setPassword(UserData.PASSWORD));
         app.getUser().clickLoginButton();
         Assert.assertTrue(app.getUser().isLoginErrorMessagePresent());
     }
@@ -34,7 +35,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginWrongPasswordNegativeTest() {
         app.getUser().clickLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("kl5@gmail.com").setPassword("Aa12345!5"));
+        app.getUser().fillLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD + "5"));
         app.getUser().clickLoginButton();
         Assert.assertTrue(app.getUser().isLoginErrorMessagePresent());
     }

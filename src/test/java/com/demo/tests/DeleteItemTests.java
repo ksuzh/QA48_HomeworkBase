@@ -1,5 +1,7 @@
 package com.demo.tests;
 
+import com.demo.data.ItemData;
+import com.demo.data.UserData;
 import com.demo.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +15,7 @@ public class DeleteItemTests extends TestBase {
         }
 
         app.getUser().clickLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("kl5@gmail.com").setPassword("Aa12345!"));
+        app.getUser().fillLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getUser().clickLoginButton();
 
         app.getItem().clickBooksLink();
@@ -27,7 +29,7 @@ public class DeleteItemTests extends TestBase {
     public void deleteItemPositiveTests() {
         int sizeBefore = app.getItem().cartSize();
         System.out.println(sizeBefore);
-        app.getItem().deleteItem("Fiction");
+        app.getItem().deleteItem(ItemData.BOOK2);
 
         int sizeAfter = app.getItem().cartSize();
         Assert.assertEquals(sizeAfter, sizeBefore - 1);

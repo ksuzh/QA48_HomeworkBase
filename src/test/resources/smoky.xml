@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Quick" verbose="1">
-    <test name="Quick1">
+<suite name="Smoky" verbose="1">
+    <test name="Smoky1">
         <classes>
             <class name="com.demo.tests.RegistrationTests">
                 <methods>
