@@ -77,4 +77,10 @@ public class UserHelper extends BaseHelper {
     public boolean isLogoutLinkPresent() {
         return isElementPresent(By.cssSelector("[href='/logout']"));
     }
+
+    public String getErrorMessageForField(String errorField) {
+        return driver.findElement(By.xpath("//span[@class='field-validation-error' " +
+                "                   and @data-valmsg-for='" + errorField + "']")).getText();
+
+    }
 }
