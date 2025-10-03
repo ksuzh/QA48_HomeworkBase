@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.tests.RegistrationTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-10-02T11:33:06" hostname="LPV824W" time="13.655">
+  <properties/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[0](com.demo.models.User@6a74d228, FirstName)" classname="com.demo.tests.RegistrationTests" time="1.219"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[1](com.demo.models.User@769d513, LastName)" classname="com.demo.tests.RegistrationTests" time="1.093"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[2](com.demo.models.User@30501e60, Email)" classname="com.demo.tests.RegistrationTests" time="1.049"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[3](com.demo.models.User@205bed61, Password)" classname="com.demo.tests.RegistrationTests" time="1.061"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[4](com.demo.models.User@34d4860f, ConfirmPassword)" classname="com.demo.tests.RegistrationTests" time="1.074"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[5](com.demo.models.User@4f89331f, Email)" classname="com.demo.tests.RegistrationTests" time="1.089"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[6](com.demo.models.User@2d5ef498, Email)" classname="com.demo.tests.RegistrationTests" time="1.136"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[7](com.demo.models.User@2fd954f, Email)" classname="com.demo.tests.RegistrationTests" time="1.123"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[8](com.demo.models.User@36d33f4, Email)" classname="com.demo.tests.RegistrationTests" time="1.107"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[9](com.demo.models.User@553da911, Email)" classname="com.demo.tests.RegistrationTests" time="1.175"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[10](com.demo.models.User@2c719bd4, Password)" classname="com.demo.tests.RegistrationTests" time="1.098"/>
+  <testcase name="negativeRegistrationDataProviderFromScvTests[11](com.demo.models.User@6fa02932, ConfirmPassword)" classname="com.demo.tests.RegistrationTests" time="1.301"/>
+  <system-out><![CDATA[14:33:06.462 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:07.700 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:07.700 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:07.700 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:07.702 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:08.804 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:08.805 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:08.805 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:08.806 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:09.864 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:09.864 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:09.864 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:09.867 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:10.938 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:10.938 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:10.938 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:10.941 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:12.024 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:12.024 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:12.024 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:12.026 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:13.124 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:13.125 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:13.125 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:13.126 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:14.272 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:14.272 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:14.272 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:14.274 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:15.407 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:15.408 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:15.408 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:15.409 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:16.523 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:16.524 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:16.524 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:16.525 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:17.715 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:17.715 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:17.715 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:17.717 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:18.823 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:18.823 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:18.823 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+14:33:18.824 [Test worker] INFO  com.demo.tests.TestBase -- Start test negativeRegistrationDataProviderFromScvTests
+14:33:20.135 [Test worker] INFO  com.demo.tests.TestBase -- Test passed: negativeRegistrationDataProviderFromScvTests
+14:33:20.135 [Test worker] INFO  com.demo.tests.TestBase -- Stop test 
+14:33:20.136 [Test worker] INFO  com.demo.tests.TestBase -- ********************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

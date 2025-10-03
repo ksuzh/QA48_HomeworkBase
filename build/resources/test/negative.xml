@@ -1,20 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Smoky" verbose="1">
-    <test name="Smoky1">
+<suite name="Negative" verbose="1">
+    <test name="Negative1">
         <classes>
             <class name="com.demo.tests.RegistrationTests">
                 <methods>
-                    <exclude name=".*Provider.*"/>
+                    <include name=".*Negative.*"/>
                 </methods>
             </class>
             <class name="com.demo.tests.LoginTests">
                 <methods>
-                    <exclude name=".*Negative.*"/>
+                    <include name=".*Negative.*"/>
                 </methods>
             </class>
-            <class name="com.demo.tests.AddItemTest"/>
-            <class name="com.demo.tests.DeleteItemTests"/>
         </classes>
     </test>
 </suite>
